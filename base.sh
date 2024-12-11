@@ -23,3 +23,7 @@ if [[ ! -f "$HOME/.config/fish/config.fish" ]]; then
 	sudo pacman -S --needed fish
         chsh -s /usr/bin/fish
 fi
+
+# Git
+git config --global init.defaultBranch main
+git config pull.rebase false
