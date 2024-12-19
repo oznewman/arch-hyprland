@@ -3,6 +3,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 # Core utils
 sudo pacman -S --needed iwd vim git less openssh pciutils acpi rsync
+sudo pacman -S --needed unzip
 sudo pacman -S --needed firefox
 
 # Fonts
@@ -27,3 +28,6 @@ fi
 # Git
 git config --global init.defaultBranch main
 git config pull.rebase false
+
+# Ollama
+curl -fsSL https://ollama.com/install.sh | sh
